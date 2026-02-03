@@ -45,7 +45,7 @@ public class LoginController {
         }
 
         session.setAttribute("usuarioLogado", usuario);
-        return "redirect:/dashboard";
+        return "redirect:/home";
     }
 
     // Logout

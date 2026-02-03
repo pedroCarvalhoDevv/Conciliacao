@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Cadastro de Empresa</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+
+<header>
+  <h1>Cadastro de Empresa</h1>
+</header>
+
+<div class="container">
+  <div class="card">
+
+    <form th:action="@{/empresa/salvar}" th:object="${empresa}" method="post">
+
+      <label>ID Mateus</label>
+      <input type="text" th:field="*{idMateus}" required>
+
+      <label>Nome da Empresa</label>
+      <input type="text" th:field="*{nome}" required>
+
+      <button type="submit">Salvar</button>
+
+    </form>
+
+  </div>
+</div>
+
+</body>
+</html>

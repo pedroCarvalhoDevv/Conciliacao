@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Empresas</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+
+<header>
+  <h1>Empresas Cadastradas</h1>
+</header>
+
+<div class="container">
+  <div class="card">
+
+    <a th:href="@{/empresa/novo}">
+      <button>Nova Empresa</button>
+    </a>
+
+    <br><br>
+
+    <table>
+      <tr>
+        <th>ID</th>
+        <th>ID Mateus</th>
+        <th>Nome</th>
+      </tr>
+      <tr th:each="e : ${empresas}">
+        <td th:text="${e.id}"></td>
+        <td th:text="${e.idMateus}"></td>
+        <td th:text="${e.nome}"></td>
+      </tr>
+    </table>
+
+  </div>
+</div>
+
+</body>
+</html>

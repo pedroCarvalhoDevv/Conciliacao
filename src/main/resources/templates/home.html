@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Home</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+
+<header>
+  <h1>Sistema de Demandas – Conciliação</h1>
+  <nav>
+    <a th:href="@{/home}">Home</a>
+    <a th:href="@{/empresa}">Empresa</a>
+    <a th:href="@{/tarefas}">Tarefas</a>
+    <a th:href="@{/dashboard}">Dashboard</a>
+    <a th:href="@{/logout}">Sair</a>
+  </nav>
+</header>
+
+<div class="container">
+  <div class="card">
+    <h2>Bem-vindo 👋</h2>
+    <p>Use o menu acima para navegar entre os cadastros e o dashboard.</p>
+  </div>
+</div>
+
+</body>
+</html>
